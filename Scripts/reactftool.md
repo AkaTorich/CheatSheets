@@ -1,0 +1,1 @@
+/opt/RsaCtfTool/RsaCtfTool.py --publickey publickey.pub --private

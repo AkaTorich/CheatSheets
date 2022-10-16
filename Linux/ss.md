@@ -1,0 +1,1 @@
+ss -lntp #show local open ports

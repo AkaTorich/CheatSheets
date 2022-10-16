@@ -1,0 +1,1 @@
+impacket-smbserver -smb2support -user username -password password sharename $(pwd)

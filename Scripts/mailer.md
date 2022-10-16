@@ -1,0 +1,1 @@
+while read mail; do swaks -to $mail -from it@sneakymailer.htb -header "Subject: Credentials / Errors" -body "goto http://10.10.14.38" -server 10.10.10.197; done < ../boxes/sneakymailer/mails.txt

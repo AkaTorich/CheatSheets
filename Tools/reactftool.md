@@ -1,0 +1,1 @@
+/opt/RsaCtfTool/RsaCtfTool.py --publickey rootauthorizedsshkey.pub --private
