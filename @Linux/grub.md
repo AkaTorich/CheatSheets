@@ -1,0 +1,1 @@
+adding “fbcon=nodefer” to grub cmd disabling vendor logo

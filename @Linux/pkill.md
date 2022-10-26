@@ -1,0 +1,1 @@
+`pkill --full sscriptname.py`

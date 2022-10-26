@@ -1,0 +1,1 @@
+station wla0 connect Bodri
