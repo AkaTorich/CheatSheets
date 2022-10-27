@@ -3,3 +3,4 @@ python get-pip.py
 pip install requests  
   
 sudo python -m SimpleHTTPServer 80
+sudo python -m http.server 80

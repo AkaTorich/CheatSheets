@@ -6,7 +6,8 @@ Recursively search for files in the current directory that
 contain the word “password” and also end in either .xml, .ini,
 or .txt:
 `> findstr /si password *.xml *.ini *.txt`
-
+#Find all passwords in all files
+`> findstr /spin "password" "."`
 
 ##### print all files in c:\ to file  
 `dir /b /a /s c:\ > cdirs.txt`
