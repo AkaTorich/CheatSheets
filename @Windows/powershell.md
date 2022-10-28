@@ -59,3 +59,6 @@
 ###### Invoke Script
 `.\Script.ps1`
 `Invoke-Function`
+
+###### Bypass execution policy
+`powershell.exe -ep bypass`

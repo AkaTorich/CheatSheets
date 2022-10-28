@@ -1,1 +1,3 @@
-`findstr /si password *.txt *.ini *.config` #search
+#cmdkeys see
+`-----------------------------------------------------------------------------`
+`findstr /si password *.txt *.ini *.config` #search 

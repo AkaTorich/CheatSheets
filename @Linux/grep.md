@@ -1,3 +1,5 @@
+##### Grep ip
+`ifconfig tun0 | awk -F' ' '{print $2}'|  grep -E -o '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]'`
 ```shell-session
 SysRq@htb[/htb]$ cat /etc/passwd | grep -v "false\|nologin"
 
