@@ -23,3 +23,4 @@ Octal Value:                      7    |    5    |    4
 ----------------------------------------------------------
 Permission Representation:      r w x  |  r - x  |  r - -
 ```
+ls -la --sort=size -r #return files sorted by size from low to high

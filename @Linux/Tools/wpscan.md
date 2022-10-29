@@ -1,0 +1,1 @@
+wpscan --url http://target --plugins-detection aggressive -e ap # or vp
