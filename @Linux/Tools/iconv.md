@@ -1,0 +1,1 @@
+cat file.txt | iconv -f UTF-16LE -t utf-8

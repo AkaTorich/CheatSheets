@@ -40,3 +40,7 @@ ssh -Q mac # MAC types
 ssh -Q key # Public key  
 ssh -Q kex # Key Exchange Algos
 ```
+`$ ssh username@192.168.1.101`
+_Unable to negotiate with 192.168.1.101 port 22: no matching host key type found. Their offer: ssh-rsa,ssh-dss_
+USE 
+`$ ssh username@192,168.1.101 -oHostKeyAlgorithms=+ssh-dss`
